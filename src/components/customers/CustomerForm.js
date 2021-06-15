@@ -12,7 +12,7 @@ export default function CustomerForm({getCustomers}) {
 
         try{
             const customerData = { name:customerName};
-            await axios.post('http://localhost:5000/customer',customerData);
+            await axios.post('https://mern-auth-template1.herokuapp.com/customer',customerData);
             getCustomers();
             
         }

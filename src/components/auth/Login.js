@@ -17,7 +17,7 @@ export default function Login() {
         try{
             const loginData = { email , password};
 
-            await axios.post('http://localhost:5000/auth/login',loginData);
+            await axios.post('https://mern-auth-template1.herokuapp.com/auth/login',loginData);
             getLoggedIn();
             history.push("/");
         }catch(err){

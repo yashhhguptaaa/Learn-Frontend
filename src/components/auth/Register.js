@@ -16,7 +16,7 @@ export default function Register() {
         try{
             const registerData = { email , password , passwordVerify };
 
-            await axios.post('http://localhost:5000/auth/',registerData);
+            await axios.post('https://mern-auth-template1.herokuapp.com/auth/',registerData);
             getLoggedIn();
             history.push("/");
         }catch(err){
