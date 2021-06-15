@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://mern-auth-template1.herokuapp.com/',
+      target: 'https://mern-auth-template1.herokuapp.com',
       changeOrigin: true,
     })
   );
